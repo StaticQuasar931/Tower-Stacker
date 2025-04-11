@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Play Tower Stacker - Unblocked Flash Game | StaticQuasar931</title>
+
+  <meta name="description" content="Play Tower Stacker online – a classic stacking Flash game where balance is everything. Unblocked, school-safe, and fully playable with Ruffle on StaticQuasar931." />
+  <meta name="keywords" content="Tower Stacker, stack tower game, stacking puzzle, tower game unblocked, Tower Stacker flash, tower balancer, unbl0cked Flash g@mes, school-safe stacking game, Ruffle games, Tower Stacker online, StaticQuasar931 tower game, tower g@me for Chromebook, balance tower Flash, no download stack game, static931 tower g@me, retro Flash tower game, build tower puzzle, tower game physics, block stacker unblocked" />
+  <meta name="author" content="StaticQuasar931" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://staticquasar931.github.io/Tower-Stacker/" />
+  <link rel="icon" href="100x100.jpg" type="image/jpeg" />
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #000;
+      overflow: hidden;
+    }
+
+    #game-container {
+      width: 100vw;
+      height: 100vh;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #player {
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+    }
+
+    #staticMenu {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background: #222;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+      font-size: 14px;
+      z-index: 1000;
+      animation: sparkle 2s infinite;
+    }
+
+    #staticMenu a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    #staticMenu:hover {
+      background: #333;
+    }
+
+    @keyframes sparkle {
+      0%, 100% { box-shadow: 0 0 10px rgba(255,255,255,0.2); }
+      50% { box-shadow: 0 0 16px rgba(0,255,255,0.5); }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- StaticQuasar931 Menu -->
+  <div id="staticMenu">
+    <a href="https://sites.google.com/view/staticquasar931/gm3z" target="_blank">More Unblocked Games by Static</a>
+  </div>
+
+  <!-- Fullscreen Game Container -->
+  <div id="game-container">
+    <div id="player"></div>
+  </div>
+
+  <!-- Ruffle Loader -->
+  <script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("DOMContentLoaded", () => {
+      const ruffle = window.RufflePlayer.newest();
+      const player = ruffle.createPlayer();
+      player.style.width = "100%";
+      player.style.height = "100%";
+      player.style.backgroundColor = "#000";
+      document.getElementById("player").appendChild(player);
+      player.load("Tower Stacker.swf"); // Filename must match exactly, including spaces
+    });
+  </script>
+</body>
+</html>
